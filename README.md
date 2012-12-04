@@ -9,6 +9,7 @@ of both visual and textual information
 
 How does it work ?
  download the source code and run textify.py
+ 
     python textify.py input_image.jpg input_text.txt
 
 Saves an output image "output.jpg" which contains the combination of input_image.jpg and input_text.txt and saves it 
