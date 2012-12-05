@@ -42,7 +42,7 @@ def textify(input_file,text_file):
 	lines = textwrap.wrap(text,width=width)	
 
 	fontsize = 9
-	font = ImageFont.truetype("ARIALN.TTF", fontsize)
+	font = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", fontsize)
 
 	h = 0
 
