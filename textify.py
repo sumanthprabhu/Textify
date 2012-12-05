@@ -46,6 +46,8 @@ def textify(input_file,text_file):
 	#windows
 	if sys.platform.startswith('win'):
 		font = ImageFont.truetype("ARIALN.TTF",fontsize)
+        elif sys.platform.startswith('darwin'):
+                font = ImageFont.truetyoe("~/Library/Fonts/Arial.ttf",fontsize)
 	else:
 		font = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", fontsize)
 
