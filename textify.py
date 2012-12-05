@@ -42,7 +42,12 @@ def textify(input_file,text_file):
 	lines = textwrap.wrap(text,width=width)	
 
 	fontsize = 9
-	font = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", fontsize)
+	
+	#windows
+	if sys.platform.startswith('win'):
+		font = ImageFont.truetype("ARIALN.TTF",fontsize)
+	else:
+		font = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", fontsize)
 
 	h = 0
 
