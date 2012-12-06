@@ -2,6 +2,7 @@ Textify
 =======
 
 About
+
   Textify is a hobbyist project taken up initially to understand the power of the python imaging library. It 
 takes in text input and an image and generates an output image formed using the input text to produce a combination 
 of both visual and textual information 
