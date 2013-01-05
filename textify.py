@@ -11,16 +11,16 @@ import sys
 #check for valid input
 def validity(argv):
 	if len(argv) != 3:
-		return [False,"Missing arguments"]
+		return (False,"Missing arguments")
 	try:
-   		with open(sys.argv[1]) as f: 
+   		with open(argv[1]) as f: 
    			#check if it's an image file
-   			if not sys.argv[1].endswith(('.png','.jpg','.jpeg')):
-   				return [False,"Please enter'png','jpg' or'jpeg' files only"]
+   			if not argv[1].endswith(('.png','.jpg','.jpeg')):
+   				return (False,"Please enter'png','jpg' or'jpeg' files only")
 	except IOError as e:
-   		return [False, str(e)]
+   		return (False, str(e))
    	else:
-		return [True]
+		return (True,)
 
 
 #textify the image
